@@ -1,1 +1,77 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap" rel="stylesheet" /><link href="./main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v1_2"><span class="v1_5">donothire.com</span><span class="v3_4">Step 1 of 3</span><span class="v3_7">Unfortunately we only accept contributions with LinkedIn profiles at this moment. Keep checking this page for new features.</span><span class="v3_5">What is this person’s Linkedin profile?</span><span class="v3_2">How does it work?</span><span class="v3_3">FAQ</span><div class="v3_6"></div><div class="v4_18"><div class="v3_8"></div><div class="v3_11"></div></div></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>donothire.co</title>
+  </head>
+  <body class="text-center">
+    <div class="d-flex w-100 h-100 p-3 flex-column">
+      <header class="masthead mb-auto">
+        <h3 class="masthead-brand">donothire.com</h3>
+        <nav class="nav nav-masthead">
+          <a class="nav-link" href="#">How does it work?</a>
+          <a class="nav-link" href="#">FAQ</a>
+        </nav>
+      </header>
+      <main class="cover-container mx-auto inner cover">
+        <form action="get">
+          <fieldset class="form-group">
+            <legend>Step 1 of 3</legend>
+
+            <label for="target">What is this person’s LinkedIn profile?</label>
+
+            <div class="input-group">
+              <input type="url" id="target" class="form-control" placeholder="https://www.linkedin.com/in/dharmendra-magas-b41b98/">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">&gt;</button>
+              </div>
+            </div>
+
+            <small class="form-text text-muted">Unfortunately we only accept contributions with LinkedIn profiles at this moment. Keep checking back for updates.</small>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Step 2 of 3</legend>
+
+            <label for="reasoning">Why is this person a donothire?</label>
+
+            <div class="input-group">
+              <textarea id="reasoning" class="form-control" placeholder="The guy is a joker."></textarea>
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">&gt;</button>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Step 3 of 3</legend>
+
+            <label for="sender">What is your email?</label>
+
+            <div class="input-group">
+              <input type="email" id="sender" class="form-control" placeholder="hello@example.com">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">&gt;</button>
+              </div>
+            </div>
+
+            <small class="form-text text-muted">We use your email to ensure that the submission is sincere. Your submission is anonymous.</small>
+          </fieldset>
+
+        </form>
+      </main>
+      <footer class="mastfoot mt-auto">
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </body>
+</html>
