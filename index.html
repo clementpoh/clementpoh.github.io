@@ -20,45 +20,45 @@
           <a class="nav-link" href="#">FAQ</a>
         </nav>
       </header>
-      <main class="cover-container mx-auto inner cover">
+      <main id="vue" class="cover-container mx-auto inner cover">
         <form action="get">
-          <fieldset class="form-group">
+          <fieldset v-if="step == 0" class="form-group">
             <legend>Step 1 of 3</legend>
 
-            <label for="target">What is this person’s LinkedIn profile?</label>
+            <label class="display-4" for="target">What is this person’s LinkedIn profile?</label>
 
             <div class="input-group">
               <input type="url" id="target" class="form-control" placeholder="https://www.linkedin.com/in/dharmendra-magas-b41b98/">
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">&gt;</button>
+                <button class="btn btn-secondary" type="button" v-on:click="next">&gt;</button>
               </div>
             </div>
 
-            <small class="form-text text-muted">Unfortunately we only accept contributions with LinkedIn profiles at this moment. Keep checking back for updates.</small>
+            <small class="form-text text-muted">We only accept contributions with LinkedIn profiles at this time. Check back for updates.</small>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset v-if="step == 1" class="form-group">
             <legend>Step 2 of 3</legend>
 
-            <label for="reasoning">Why is this person a donothire?</label>
+            <label class="display-4" for="reasoning">Why is this person a donothire?</label>
 
             <div class="input-group">
               <textarea id="reasoning" class="form-control" placeholder="The guy is a joker."></textarea>
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">&gt;</button>
+                <button class="btn btn-secondary" type="button" v-on:click="next">&gt;</button>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset v-if="step == 2" class="form-group">
             <legend>Step 3 of 3</legend>
 
-            <label for="sender">What is your email?</label>
+            <label class="display-4" for="sender">What is your email?</label>
 
             <div class="input-group">
               <input type="email" id="sender" class="form-control" placeholder="hello@example.com">
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">&gt;</button>
+                <button class="btn btn-secondary" type="button" v-on:click="next">&gt;</button>
               </div>
             </div>
 
@@ -73,5 +73,6 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
